@@ -1,0 +1,11 @@
+lis $2
+.word 0x0000000f
+lis $1
+.word 0x000000c4
+lis $3
+.word 3
+lis $5
+.word 0xffff000c
+sw $3,0($5)
+add $5,$0,$0
+jr $31
